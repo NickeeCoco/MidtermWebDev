@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    font-size: 15px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+.page {
+    max-width: 1200px;
+    background-image: url("../pics/htmlbg.jpg");
+    margin: auto;
+    padding: 2rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* NAVBARS */
+.nav ul {
+    padding-inline-start: 0;;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+/* SECONDARY NAVBAR */
+.secondary-navs {
+    padding: 10rem .75rem;
+    width: 20%;
+}
+
+.secondary-nav a:hover {
+    color: #f1752b;
+    text-decoration: underline;
+}
+
+.secondary-nav {
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.secondary-nav li {
+    padding-bottom: .75rem;
+}
+
+.secondary-nav li::after {
+    content: url("../pics/sidebarli.png");
+    margin-left: 7px;
+}
+
+/* HEADER */
+.header {
+    background-image: url("../pics/headerbg.png");
+    padding: 3rem 0;
+    border-radius: 25px 0 0 0;
+    height: 205px;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: auto 0;
+    margin-left: 2rem;
+}
+
+.header h1 span {
+    color: #f1752b;
+    font-weight: bold;
+}
+
+
+/* MAIN */
+.main-content {
+    width: 620px;
+}
+
+.articles {
+    background-image: url("../pics/pagebg.gif");
+    padding: 2rem;
+}
+
+.article {
+    border-bottom: 1px solid #cdcdc3;
+    padding-bottom: 2rem;
+}
+
+.article:not(:first-child) {
+    margin-top: 2rem;
+}
+
+.article h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.metadata {
+    font-size: .85em;
+    margin-top: 3px;
+}
+
+.article-preview {
+    margin-top: 1rem;
+}
+
+.read-more {
+    color: #f1752b;
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    color: black;
+}
+
+
+
+/* FOOTER */
+.footer {
+    background-image: url("../pics/footerbg.jpg");
+    height: 112px;
+}
+
+.footer p {
+    margin: auto 0;
+    margin-left: 2rem;
+    color: #dcd9d5;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 20%;
+    padding-left: .75rem;
+}
+
+/* MAIN NAV */
+.main-nav {
+    color: #dfb3a0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.main-nav ul {
+    margin-block-start: 0;
+}
+
+.main-nav li {
+    padding: .5rem;
+    margin-bottom: .3rem;
+}
+
+.current-page,
+.main-nav li:hover {
+    background-color: #c35309;
+    color: white;
+    border-radius: 15px;
+}
+
+.aside {
+    border: 1px solid #bd5813;
+    padding: 1rem;
+    background-color: #dd6310;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
